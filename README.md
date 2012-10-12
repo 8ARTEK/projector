@@ -15,7 +15,7 @@ Follow the list below:
 
 1. Unpack it somewhere.
 2. Edit /project.md to change the project title, compatibility notice, and add pages to your project.
-3. Create appropriate directories in the /project directory (same names as the pages). Case insensitive, underscores will be converted to spaces.
+3. Create appropriate directories inside the /project directory (same names as the pages). Case insensitive, underscores will be converted to spaces.
 
 
 ## Tips & Tricks
