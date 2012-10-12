@@ -24,8 +24,8 @@ Follow the list below:
 
 ## Features
 
-* Very simple and quick to set up, configure and maintain thanks to Markdown syntax
-* Easily customizable as it's based on Bootstrap for styling
+* Supersimple/quick to set up, configure and maintain thanks to Markdown syntax
+* Easily customizable visually as it's based on Bootstrap for styling
 * Can be used with any server-side language as everything's on the client side
 * Doesn't require any DB to run - simply copy it over and start using
 
