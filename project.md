@@ -10,7 +10,7 @@ High Priority
 Medium Priority
 -----------
 
-  - Contact
+  - Media
   - Information
   - Products
   - Contact Us
