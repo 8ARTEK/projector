@@ -1,4 +1,5 @@
 var current_url = window.location;
+var project_path = 'project/';
 
 function url_exists(url, cb){
 	jQuery.ajax({
@@ -44,7 +45,7 @@ $(window).bind('load', function(){
 				this_project = $('.projects .table tbody:nth(' + i + ')');
 
 
-				url_exists('project/' + project_name_sys, function(status){
+				url_exists(project_path + project_name_sys, function(status){
 
 					if(status === 200){
 						this_project.append('<tr> <td> ' + project_name + ' </td> <td class="status ready"> <a class="btn btn-mini btn-success" href="project/' + project_name_sys + '" target="_blank">Ready</a> </td> </tr>');
