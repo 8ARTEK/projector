@@ -31,7 +31,7 @@ $(window).bind('load', function(){
 		// logotype
 		$('h1#logo').text($('h1',data).text());
 
-		// logotype
+		// compatibility
 		$('#compatibility').text($('p',data).text());
 
 		// tabs
@@ -77,12 +77,18 @@ $(window).bind('load', function(){
 
 		// paint the progress bar
 		$('.progress .bar').each(function(i) {
-			$(this).css('width', progress[i]/  progress.length + '%');
+			$(this).css('width', progress[i] / progress.length + '%');
 		});
+		
+		
+		
+		// loader
+		$('#loader').hide();
+		$('.container').fadeIn();
 
 	});
 
 	
-
+	
 
 });

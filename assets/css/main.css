@@ -7,20 +7,37 @@ h1#logo {
 	font-family: kaushan-script, serif;
 }
 
-footer{
+#loader {
+	background: url("../img/loader.gif") no-repeat;
+	width: 16px;
+	height: 16px;
+   
+	margin: 200px auto;
+	/*position:absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -8px;
+	margin-top: -8px;*/
+}
+
+.container {
+	display:none;
+}
+
+footer {
 	font-style:italic;
 }
 
-#high-tab{
+#high-tab {
 	color:#CB423C;
 }
-#medium-tab{
+#medium-tab {
 	color:#F99A13;
 }
-#low-tab{
+#low-tab {
 	color:#389FBD;
 }
-.nav .active{
+.nav .active {
 	font-weight:bold;
 	color:inherit;
 }
