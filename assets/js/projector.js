@@ -42,12 +42,16 @@ $(window).bind('load', function(){
 				project_name = $(this).text();
 				project_name_sys = project_name.split(' ').join('_').toLowerCase() + '/'; // + '.html'
 				this_project = $('.projects .table tbody:nth(' + i + ')');
+		
+				if(relative_mode !== true){
+					project_path = '';
+					project_name_sys = project_name;
+				}				
 
+				url_exists(project_path + project_name_sys, function(status){
 
-				url_exists('project/' + project_name_sys, function(status){
-
-					if(status === 200){
-						this_project.append('<tr> <td> ' + project_name + ' </td> <td class="status ready"> <a class="btn btn-mini btn-success" href="project/' + project_name_sys + '" target="_blank">Ready</a> </td> </tr>');
+					if(status === 200 || status === 0){
+						this_project.append('<tr> <td> ' + project_name + ' </td> <td class="status ready"> <a class="btn btn-mini btn-success" href="' + project_path + project_name_sys + '" target="_blank">Ready</a> </td> </tr>');
 					}
 					else{
 						this_project.append('<tr> <td> ' + project_name + ' </td> <td class="status"> <i class="icon-time"></i> In Progress </td> </tr>');
@@ -78,6 +82,7 @@ $(window).bind('load', function(){
 
 	});
 
+	
 
 
 });
