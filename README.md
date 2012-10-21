@@ -14,13 +14,16 @@ Ever needed a quick & easy way to share your projects / mockups and progress wit
 Follow the list below:         
 
 1. Unpack it somewhere.
-2. Edit /project.md to change the project title, compatibility notice, and add pages to your project.
-3. Create appropriate directories inside the /project directory (same names as the pages). Case insensitive, underscores will be converted to spaces.
+2. Edit config section inside /index.html and set up your project path (if you want different relative path for project than the default one) and mode (if you want to use external URLs).
+3. Edit /project.md to change the project title, compatibility notice, and add pages to your project.
+4. Create appropriate directories inside the /project directory (same names as the pages) and make sure each of them has index.html file. Case insensitive, underscores will be converted to spaces.
+5. You're done. Share your Projector location with anyone you'd like!
 
 
 ## Tips & Tricks
 
 - Want one of the tabs/groups removed? Simply keep "- " (dash space) as the only list item of that list
+- Want to use external links instead of local directories? Edit /index.html file and change 'relative_mode' to false.
 
 
 ## Features
