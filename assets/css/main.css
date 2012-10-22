@@ -7,7 +7,8 @@ h1#logo {
 	font-family: kaushan-script, serif;
 }
 
-#loader {
+/* Container */
+#projector-loader {
 	background: url("../img/loader.gif") no-repeat;
 	width: 16px;
 	height: 16px;
@@ -19,15 +20,11 @@ h1#logo {
 	margin-left: -8px;
 	margin-top: -8px;*/
 }
-
-.container {
+#projector-container {
 	display:none;
 }
 
-footer {
-	font-style:italic;
-}
-
+/* Tabs */
 #high-tab {
 	color:#CB423C;
 }
@@ -40,4 +37,8 @@ footer {
 .nav .active {
 	font-weight:bold;
 	color:inherit;
+}
+
+footer {
+	font-style:italic;
 }

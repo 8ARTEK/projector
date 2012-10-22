@@ -83,8 +83,8 @@ $(window).bind('load', function(){
 		
 		
 		// loader
-		$('#loader').hide();
-		$('.container').fadeIn();
+		$('#projector-loader').hide();
+		$('#projector-container').fadeIn();
 
 	});
 
